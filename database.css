@@ -9,7 +9,7 @@ body {
     padding:0;
   }		
   .databases-wrap {
-    float:left;
+    float:right;
     width:20%;
     margin:0 5% 0 0;
     padding:0;
@@ -23,8 +23,11 @@ body {
     transition: max-height 0.2s ease-out;
   }
   .databases {
-    float:left;
+    float: right;
     width:70%;
+    position: fixed;
+    max-height: calc(100% - 50px);
+    overflow-y: auto;
   }
   .database {
     background-color: #eee;
@@ -51,3 +54,4 @@ body {
   .active:after {
     content: "\2212";
   }
+  
